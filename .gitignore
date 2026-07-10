@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+/dist
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.vault.env
+penelope_vault.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# OS
+Thumbs.db
+.cache/
+
+# API keys and secrets
+.credentials
+secrets.json
+private_key.pem
+certificate.pem
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt
+
+# Gatsby
+.cache
+public/
+
+# Serverless directories
+.serverless/
+.dynamodb/
+
+# Environment
+.env.*.local
