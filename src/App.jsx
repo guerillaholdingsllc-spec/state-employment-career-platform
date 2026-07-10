@@ -6,9 +6,8 @@ function App() {
                 <header className="App-header">
                         <h1>State Civil Service Career Platform</h1>h1>
                         <p>Centralized job recruitment and career management system</p>p>
-                </header>header>
-          </div>div>
+                </header>
+          </div>
         );
 }
-
-export default App;</div>
+export default App;
