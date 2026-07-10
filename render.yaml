@@ -1,0 +1,28 @@
+services:
+  - type: web
+      name: state-civil-service-platform
+          env: node
+              plan: free
+                  buildCommand: npm install && npm run build
+                      startCommand: npm start
+                          envVars:
+                                - key: NODE_ENV
+                                        value: production
+                                              - key: REACT_APP_ENV
+                                                      value: production
+                                                            - key: REACT_APP_API_URL
+                                                                    value: https://api.statemployment.trustchainservices.com
+                                                                          - key: REACT_APP_ENABLE_EXAM_PREP
+                                                                                  value: "true"
+                                                                                        - key: REACT_APP_ENABLE_MOCK_INTERVIEWS
+                                                                                                value: "false"
+                                                                                                    routes:
+                                                                                                          - path: /
+                                                                                                                  destination: /index.html
+                                                                                                                          match: prefix
+                                                                                                                              healthCheckPath: /
+                                                                                                                                  staticPublicPath: build
+                                                                                                                                      autoDeploy: true
+                                                                                                                                          git:
+                                                                                                                                                repo: https://github.com/Guerillaholdingsllc-spec/state-civil-service-platform
+                                                                                                                                                      branch: main
